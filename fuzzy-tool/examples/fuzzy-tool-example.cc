@@ -12,8 +12,8 @@ int main()
 	char *fis_file, *data_file;
 	int data_row_n, data_col_n, fis_row_n, fis_col_n;
 
-	data_file = (char*)"YourDataFile.txt";  //测试用数据（）
-	fis_file = (char*)"YourFisFile.fis";    //fis文件
+	data_file = (char*)"dataMatrixFile.txt";  //测试用数据（）
+	fis_file = (char*)"cluster.fis";    //fis文件
 	FuzzyTool fuzzy;
 	/* obtain data matrix and FIS matrix */
 	dataMatrix = fuzzy.returnDataMatrix(data_file, &data_row_n, &data_col_n);
