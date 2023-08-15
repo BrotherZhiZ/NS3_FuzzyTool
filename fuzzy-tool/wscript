@@ -11,7 +11,7 @@ def build(bld):
     module.source = [
         'model/fuzzy-tool.cc',
         'helper/fuzzy-tool-helper.cc',
-        'fuzzy.cc',
+        'model/fuzzy.cc',
         ]
 
     module_test = bld.create_ns3_module_test_library('fuzzy-tool')
@@ -24,7 +24,7 @@ def build(bld):
     headers.source = [
         'model/fuzzy-tool.h',
         'helper/fuzzy-tool-helper.h',
-        'fuzzy.h',
+        'model/fuzzy.h',
         ]
 
     if bld.env.ENABLE_EXAMPLES:
